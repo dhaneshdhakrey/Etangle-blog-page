@@ -1,0 +1,209 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ecommerce Website Development</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+        }
+
+        @media only screen and (max-width:500px) {
+            .maincontainer {
+                flex-direction: column;
+                align-items: center;
+            }
+
+            .cardbox {
+                width: 90%;
+                margin: 0 !important;
+                /* Make cardboxes take up most of the width */
+                margin-left: 0 !important;
+                /* Reset left margin */
+                margin-bottom: 20px;
+                
+            }
+
+            .image {
+                height: auto;
+                /* Allow image height to adjust */
+            }
+        }
+
+        navbarcontainer {
+            display: flex;
+            /* border: 2px solid black; */
+            align-items: center;
+            box-shadow: 18px -3px 16px 1px #483523;
+            position: sticky;
+            z-index: 10;
+            top: 0px;
+            background-color: white;
+
+            navbar {
+                display: flex;
+                flex-grow: 1;
+                height: 90px;
+                align-items: center;
+                /* border: 4px solid green; */
+                align-items: center;
+                margin-left: 550px;
+                position: sticky;
+            }
+
+            navbar ul {
+                display: flex;
+            }
+
+            navbar ul li {
+                margin: 30px;
+                list-style: none;
+                font-size: large;
+            }
+
+            logo {
+
+                background-image: url(logo.png);
+                margin-right: 0px;
+                width: 250px;
+                height: 90px;
+                background-size: cover;
+                background-repeat: no-repeat;
+            }
+        }
+
+        .maincontainer {
+            display: flex;
+            width: 100%vw;
+            height: 100%vh;
+
+
+            .cardbox {
+                margin: auto;
+                margin-top: 65px;
+                /* background-color: yellowgreen; */
+                width: 380px;
+                height: 580px;
+                /* margin-left: 70px; */
+                border-radius: 10px;
+                box-shadow: 5px 8px 6px -1px #e1e7ef, 0 2px 4px -2px #e1e7ef;
+            }
+
+            .image {
+                margin: auto;
+                width: 100%;
+                height: 50%;
+                background-size: cover;
+                background-position: center;
+                border-radius: 10px;
+            }
+
+            .cardtext {
+                /* border: 2px solid black; */
+                margin-top: 40px;
+                padding: 0px 16px;
+                font-size: 17.5px;
+            }
+
+            button1 {
+                display: inline-block;
+                color: var(--mdc-outlined-button-label-text-color);
+                margin-left: 13px;
+                margin-top: 30px;
+                margin-bottom: 50px;
+                box-sizing: border-box;
+                align-items: center;
+                border-radius: 10px;
+                padding: 14px;
+                /* text-decoration: solid; */
+                box-shadow: 5px 8px 6px -1px #e1e7ef, 0 2px 4px -2px #e1e7ef;
+                /* border: .1px solid black; */
+                outline: 100px;
+            }
+        }
+
+        footer {
+            display: flex;
+            margin-top: 100px;
+            display: block;
+            border: 2px solid black;
+            height: 300px;
+            width: 100%vw;
+            background-color: #0a1928;
+            color: white;
+
+        }
+
+        footer div {
+            margin: auto;
+            margin-top: 65px;
+            /* background-color: yellowgreen; */
+            width: 380px;
+            height: 100%vh;
+            margin-left: 70px;
+            /* border-radius: 10px; */
+            /* box-shadow: 5px 8px 6px -1px #e1e7ef, 0 2px 4px -2px #e1e7ef; */
+        }
+    </style>
+</head>
+
+<body>
+    <!-- <navbarcontainer>
+        <logo></logo>
+        <navbar>
+            <ul>
+                <li>Home</li>
+                <li>Services</li>
+                <li>Blogs</li>
+                <li>Team</li>
+                <li>About</li>
+                <li>Contact</li>
+            </ul>
+
+        </navbar>
+    </navbarcontainer> -->
+    <div class="maincontainer">
+        <div class="cardbox first">
+            <div class="image" style="background-image: url(1st.png);"></div>
+            <textarea1>
+                <h2 style="font-size: 21px; margin-left: 30px; padding-top: 16px;">The stretigic Imperative of Al in
+                    2024</h2>
+                <div class="cardtext">The winds of change are sweeping across industries, propelled by the
+                    transformative power of generative artificial intelligence (GenAI). In 2024, AI has become a
+                    strategic imperative for enterprises seeking to stay ahead of the curve.</div>
+            </textarea1>
+            <button1>Read More</button1>
+        </div>
+        <div class="cardbox second">
+            <div class="image" style="background-image: url(2nd.png);"></div>
+            <textarea1>
+                <h2 style="font-size: 21px; margin-left: 30px;padding-top: 16px; margin-right: 10px;">Automating Docker
+                    Image Builds with Pulumi and Docker Build Cloud</h2>
+                <div class="cardtext">Pulumi is an Infrastructure as Code (IaC) platform that simplifies resource
+                    management across any cloud or SaaS provider, including Docker. Pulumi providers are integrations
+                    with useful tools.</div>
+            </textarea1>
+            <button1>Read More</button1>
+        </div>
+        <div class="cardbox third">
+            <div class="image" style="background-image: url(3rd.png);"></div>
+            <textarea1>
+                <h2 style="font-size: 21px; margin-left: 30px;padding-top: 16px;">Crafting Captivating Headlines </h2>
+                <div class="cardtext">Engaging Introductions: Capturing Your Audience’s Interest The initial impression
+                    your blog post makes is crucial, and that’s where your introduction.</div>
+            </textarea1>
+            <button1>Read More</button1>
+        </div>
+    </div>
+    <footer>
+        <div>We Etangle You
+            <br>
+            Develop your business with our software solutions.
+        </div>
+    </footer>
+</body>
+
+</html>
